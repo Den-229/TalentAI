@@ -1,0 +1,1 @@
+import React from 'react'; import Navbar from './components/Navbar'; import Header from './components/Header'; export default function App() { return (<div className='app-container'><Navbar /><main className='content-area'><Header pageTitle='TalentAI Portal' /><div className='card'><h2>TalentAI Dashboard</h2><p>Recrutement & Skill Parsing NLP IA</p></div></main></div>); }

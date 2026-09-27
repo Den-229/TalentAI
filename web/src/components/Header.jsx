@@ -1,0 +1,1 @@
+import React from 'react'; export default function Header({ pageTitle }) { return (<header className='top-header'><div><h1>{pageTitle || 'TalentAI System Portal'}</h1><p className='subtitle'>Recrutement & Skill Parsing NLP IA</p></div><div className='status-badge'>🟢 Backend API Connected</div></header>); }

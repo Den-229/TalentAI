@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="fr"><head><meta charset="UTF-8"><title>TalentAI — Recruitment Platform</title><link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;600;700&display=swap" rel="stylesheet"><link rel="stylesheet" href="styles.css"></head>
+<body>
+    <header class="nav"><h2>🎯 TalentAI Recruiter Portal</h2><button class="btn">+ Offre d'Emploi</button></header>
+    <main class="wrap">
+        <div class="cols">
+            <div class="card">
+                <h3>Offres Actives</h3>
+                <p><strong>Développeur Full-Stack Laravel / React</strong><br>12 Candidats matchés • Score max : 94%</p>
+            </div>
+            <div class="card">
+                <h3>📄 Parsing de CV par IA</h3>
+                <div class="drop" onclick="parseCV()">Déposer un CV (Cliquer pour Simuler)</div>
+                <div id="parse-res" style="display:none; margin-top:15px; padding:10px; background:#e0f2fe;"></div>
+            </div>
+        </div>
+
+        <!-- WOW FEATURE: Skill Radar & Interview Generator -->
+        <div class="card radar-card">
+            <h3>📊 Matrice Radar de Compétences & Questions d'Entretien IA</h3>
+            <div class="radar-box">
+                <p>⚙️ <strong>Laravel / PHP :</strong> 95% (Expert)</p>
+                <p>⚛️ <strong>React / Frontend :</strong> 85% (Avancé)</p>
+                <p>🐳 <strong>Docker / DevOps :</strong> 60% (Lacune Identifiée)</p>
+            </div>
+            <button class="btn-gen" onclick="genQuestions()">🤖 Générer Questions d'Entretien Ciblées</button>
+            <div id="questions-res" style="display:none;" class="q-box"></div>
+        </div>
+    </main>
+    <script src="app.js"></script>
+</body></html>
